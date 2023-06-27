@@ -13,15 +13,16 @@
   </head>
   <body>
     <!--Header section----------------------------------------------------------->
-    <header>
+    <header class="sticky">
       <div class="logo"><span>S</span>alma.</div>
-      <ul class="header_options">
+      <ul class="header_options" id="header_options">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#project">Projects</a></li>
         <li><a href="#contact">Contact me</a></li>
       </ul>
+      <div id="menu-icon" class="bx bx-menu" onclick="togglemenu()"></div>
     </header>
 
     <!--Home section------------------------------------------------------------>
@@ -40,7 +41,7 @@
             <span>salma.ahmed01@eng-st.cu.edu.eg</span>
           </div>
           <div class="github-info">
-            <h5>Github account:</h5>
+            <h5>GitHub account:</h5>
             <span>https://github.com/salma-ahmed9</span>
           </div>
         </div>
@@ -67,13 +68,13 @@
         <span>About me</span>
         <p>
           I am a third year engineering student at Cairo University. My major is
-          computer engineering.I have an excellent GPA . I have keen interest in
+          computer engineering . I have an excellent GPA . I have keen interest in
           software development and I am eager to always learn more and enhance
           my skills as software development is at the forefront of technology
-          innovation. I am also a graphic designer and I am a graphic design
+          innovation . I am also a graphic designer and I am a graphic design
           member in the graphic design committee of Google Developers Student
-          Club (GDSC). I participated in UC Math competition and I came first on
-          Egypt then I travelled to Malaysia and I came second on the world. I
+          Club (GDSC) . I participated in UC Math competition and I came first on
+          Egypt then I travelled to Malaysia and I came second on the world . I
           play music and I participated in many concerts before .
         </p>
       </div>
@@ -166,11 +167,11 @@
             <div class="project-section">
                 <div class="numbering">1</div>
                 <div class="describe">
-                  Building a search engine using java that includes a web crawler ,
-                  indexer, ranker , query processor and phrase searching. It can
-                  crawl up to 6000 pages. The search engine interface is implemented
-                  using flutter. I was responsible for implementing the query
-                  processor,phrase searching and search engine interface
+                  Building a search engine using java that includes a web crawler ,&nbsp
+                  indexer , &nbspranker ,&nbsp query processor and phrase searching . It can
+                  crawl up to 6000 pages . The search engine interface is implemented
+                  using flutter . I was responsible for implementing the query
+                  processor ,&nbsp phrase searching and search engine interface
                 </div>
             </div>
       </div>
@@ -178,13 +179,13 @@
         <div class="project-section">
             <div class="numbering">2</div>
             <div class="describe">
-                Developing a cross platform application that acts as eventbrite
+                Developing a cross platform application that acts as EventBrite
                 clone which is a website for booking events online. The
                 application was developed by dart and flutter . It consists of a
-                login page , attendee view and creator view.I was responsible for
-                the complete development of the landing page , Events page ,
-                booking page and checkout page including the implemnetation of
-                several features as detecting user current location , filtering
+                login page ,&nbsp attendee view and creator view . I was responsible for
+                the development of the landing page ,&nbsp Events page ,&nbsp
+                booking page and checkout page including the implementation of
+                several features as detecting user current location ,&nbsp filtering
                 events by categories and by location as well as displaying events
                 info and tickets if they are available.
               </div>
@@ -194,20 +195,14 @@
     <div class="project-section">
         <div class="numbering">3</div>
         <div class="describe">
-            Building Harvard architecutre using VHDL starting from the design
-            of the architecuture with implementing assembler for converting
+            Building Harvard architecture using VHDL starting from the design
+            of the architecture with implementing assembler for converting
             assembly code to machine language . I was responsible for
             implementing and coding the execution stage of the processor
-            including ALU , forwarding unit and buffers.
+            including ALU ,&nbspforwarding unit and buffers.
           </div>
     </div>
-</div>
-
-
-    
-
-  
-      
+</div>     
 </section>
 
  <!--contact me section------------------------------------------------------------>
@@ -220,7 +215,9 @@
             <input type="text" placeholder="Your Address">
             <input type="number" placeholder="Phone number">
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn"  >Send message</button>
+            <div class="btn-box formBtn">
+              <button type="submit" class="btn">Send message</button>
+            </div>
             
         </form>
     </div>
